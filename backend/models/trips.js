@@ -1,14 +1,14 @@
+const mongoose = require("mongoose");
 
+const tripSchema = mongoose.Schema({
+  departure: String,
+  arrival: String,
+  date: Date,
+  price: Number,
+  cart: Boolean,
+  booking: Boolean,
+});
 
-const mongoose = require('mongoose')
+const Trip = mongoose.model("trips", tripSchema);
 
-const tripSchema = mongoose.Schema ({
-    departure : String,
-    arrival: String,
-    date: Date,
-    price: Number, 
-})
-
-const Trip = mongoose.model('trips' , tripSchema);
-
-module.export = Trip; 
+module.exports = Trip;
