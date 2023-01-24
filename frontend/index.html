@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tickethack</title>
+</head>
+
+<body>
+    <header id="header">
+        <nav id="navbar">
+            <h1 id="headerTitle">Tickethack</h1>
+            <h3>Cart</h3>
+            <h3>Booking</h3>
+        </nav>
+    </header>
+    <main>
+        <div id="textMain">
+            <p><strong>Explore the world effortlessly by train!</strong><br>Compare, book and enjoy cheap prices for
+                train tickets: your journey starts on Tickethack.</p>
+        </div>
+        <div id="searchCard">
+            <form action="searchTrain">
+                <input type="search" name="departure" placeholder="Departure" id="departure" />
+                <input type="search" name="arrival" placeholder="Arrival" id="departure" />
+                <input type="date" name="date" id="date" />
+                <button type="submit">Search</button>
+            </form>
+        </div>
+        <div id="resultCard">
+            <div id="resultSearch"><span id="departure"></span><span id="arival"></span><span id="hour"></span><span id="price"></span><button id="bookBtn"></button></div>
+            <img id="trainLogo" src="/frontend/images/train.png" alt="logoTrain">
+            <p>It's time to book your futur trip.</p>
+        </div>
+    </main>
+
+    <script src="/script.js"></script>
+</body>
+
+</html>

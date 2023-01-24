@@ -1,0 +1,28 @@
+
+
+*{
+    padding: 0;
+    margin:0;
+}
+    
+body {
+  background-image: url('/frontend/images/background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+
+#searchCard{
+    float: left;
+    display: flex;
+    background-color: white;
+    width: 150px;
+    box-sizing: border-box;
+  }
+
+#resultCard{
+    position: relative;
+    display: inline-block;
+    background-color: white;
+}
