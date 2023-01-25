@@ -67,7 +67,7 @@ input {
   display: flex;
   flex-direction: column;
 }
-.resultSearch{
+.resultSearch, .resultCart{
   background-color: #F5EEEE;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   border-radius: 2px;
@@ -79,6 +79,13 @@ input {
   margin-bottom: 10px;
 
 }
+.resultCart {
+margin-right: 10%;
+margin-left: 10%;
+}
+
+
+
 .bookBtn{
   background-color: #52AC92;
   color: white;
@@ -158,55 +165,50 @@ h1 {
   justify-content: space-between;
 }
     
-main {
-  
+main {  
   display :flex ;
   flex-direction : column ;
 
 }
-body {
-  background-image: url('images/background.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-}
 /* CART */
 
-body {
-  background-color: lightgray;
+#maincard {
+  background-color: #EFF1F1;
+  height: 100vw;
+  display: flex;
+  align-items: center;
+}
+h5{
+  text-align: center;
+  margin-top: 5%;
+
 }
 
 
 #myCart {
   background-color: white;
-  display: flex;
-  justify-content: center;
-  align-items: start;
-  width: 40%;
-  height: 40%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  border-radius: 1em;
+    width: 60%;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 11%;
 }
-
-
-
 #totalCart{
   color: white;
-  position: absolute;
   background-color: #01153F;
   display: flex;
-  bottom: 0%;
-  padding: 1% 43%;
+  justify-content: space-between;
+  padding-left: 4%;
+  padding-right: 4%;
+  align-items: center;
+  padding: 2%;
 }
 
 #purchaseBtn {
   border-radius: 0.5em;
-  padding: 5% 10%;
+  padding: 2% 5%;
   color: white;
   display: flex;
-  right: -230%;
   background-color: #5BB098;
 
 }
@@ -215,19 +217,16 @@ body {
   background-color: lightgray !important;
 }
 
-#myBooking {
-  background-color: white;
-  display: flex;
-  justify-content: center;
-  align-items: start;
-  width: 40%;
-  height: 40%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  border-radius: 1em;
+#trait {
+  width: 50%;
+  border-bottom: 1px solid #52AC92;
+  margin: auto;
+}
 
+#endtext {
+  color :#52AC92;
+  text-align:center;
+  padding: 5%;
 }
 
 /* BOOKING */
