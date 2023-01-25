@@ -1,8 +1,18 @@
-
-
 *{
     padding: 0;
     margin:0;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+}
+
+header {
+    background-color: white;
+    display: flex;
+    color: #5BB098;
+    justify-content: space-between;
 }
     
 body {
@@ -14,15 +24,21 @@ body {
 
 
 #searchCard{
+    padding: 100px;
+    margin: 200px;
     float: left;
     display: flex;
     background-color: white;
     width: 150px;
     box-sizing: border-box;
+    border-radius: 20px;
   }
 
 #resultCard{
+    padding: 100px;
+    margin: 200px;
     position: relative;
-    display: inline-block;
+    display: flex;
     background-color: white;
+    border-radius: 20px;
 }
