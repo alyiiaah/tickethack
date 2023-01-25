@@ -11,25 +11,27 @@
 
 <body style="background-color: lightgray !important;">
     <header id="header">
-        <nav id="navbar">
-            <h1 id="headerTitle">Tickethack</h1>
-            <h3>Cart</h3>
-            <h3>Booking</h3>
-        </nav>
-    </header>
+        
+        <h1 id="headerTitle">Tickethack</h1>
+        <div id ="rightside">
+        <a href = "cart.html">Cart</a>
+        <a href="booking.html">Booking</a>
+        </div>
+    
+</header>
     <main>
         <div id="myCart">
-            <h3>My cart</h3><br>
+            <h5>My cart</h5><br>
             <div class="resultCart"><span class="tripId"></span><span class="departure"></span><span class="arival"></span><span class="hour"></span><span class="price"></span><button class="bookBtn"></button></div>
             <div id="totalCart">
-            <p>Total : <span id="price"></span></p>
+            Total: <span id="price"></span>
             <button type="submit" id="purchaseBtn">Purchase</button>
             </div>
         </div>
     </main>
 
 
-    <script src="script.js"></script>
+    <script src="cart.js"></script>
 </body>
 
 </html>
