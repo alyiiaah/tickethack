@@ -50,20 +50,46 @@ justify-content: space-evenly;
   border: solid 1px white;
 }
 
-input {
-  width: 100%;
-  height: 10%;
 
-}
 
 #date {
-  margin-top : 10%
+    margin-top: 10%;
+    width: 92%;
+}
+input {
+    width: 98%;
+    height: 13%;
+    padding: 7px;
 }
 
 #resultCard {
   overflow: auto ;
   display: flex;
   flex-direction: column;
+}
+.resultSearch{
+  background-color: #F5EEEE;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 2px;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2px;
+  margin-bottom: 10px;
+
+}
+.bookBtn{
+  background-color: #52AC92;
+  color: white;
+  border: solid 1px white;
+  padding: 5px;
+  border-radius: 4px;
+  padding-left: 10PX;
+  padding-right: 10px;
+}
+.price{
+  font-weight:bold;
 }
 
 #logos {
@@ -75,6 +101,22 @@ input {
   border-bottom: solid 2px #52AC92;
 
 }
+
+#notripfound {
+  background-image: url('images/notfound.png');
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 60%;
+  border-bottom: solid 2px #52AC92;
+
+}
+#textnotrip {
+  padding-top: 40px;
+  text-align: center;
+
+}
+
 #timetobook {
   padding-top: 40px;
   text-align: center;
@@ -118,17 +160,15 @@ h1 {
     
 main {
   
- 
   display :flex ;
   flex-direction : column ;
-body {
+}
+
+body{
   background-image: url('images/background.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-
 }
-
-
 /* CART */
 
 body {

@@ -12,32 +12,32 @@ document.querySelector("#searchBtn").addEventListener("click", function () {
         document.querySelector("#resultCard").innerHTML = '' ;
         console.log(data)
         for (let i = 0; i < data.trips.length; i++) {
-          const hour = data.trips[i].date.substring(12, 16);
+          const hour = data.trips[i].date.substring(11, 16);
           document.querySelector("#resultCard").innerHTML += `
                 <div class="resultSearch"><span class="tripId" id ="${data.trips[i]._id}" ></span>
-                <span class="departure" >${data.trips[i].departure}</span>
+                <span class="departure" >${data.trips[i].departure} ></span>
                 <span class="arrival">${data.trips[i].arrival}</span>
                 <span class="hour">${hour}</span>
-                <span class="price">${data.trips[i].price}</span>
+                <span class="price">${data.trips[i].price}€</span>
                 <button class="bookBtn" id ="${data.trips[i]._id}">Book</button></div>
 			`;
-          bookingBtnListen();
+          
         }
+        bookingBtnListen();
       } else {
         document.querySelector("#resultCard").innerHTML = `
         <div id ="notripfound">
-        <img src ="images/notfound.png">
-        No trip found
         </div>
+        <span id= "textnotrip">No trip found</span>
         `;
       }
     });
 });
 
 function bookingBtnListen() {
-  for (let i = 0; i < document.querySelectorAll(".deleteCity").length; i++) {
+  for (let i = 0; i < document.querySelectorAll(".bookBtn").length; i++) {
     document
-      .querySelectorAll(".bookBtn")
+      .querySelector(".bookBtn")
       .addEventListener("click", function () {
         fetch(`http://localhost:3000/carts/${this.id}`, { method: "PUT" })
           .then((response) => response.json())
