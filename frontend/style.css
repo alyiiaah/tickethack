@@ -3,16 +3,33 @@
     margin:0;
 }
 
-nav{
+#searchCard {
+
+  background-color: white;
+  padding: 20px;
+  position: relative;
+}
+
+#resultCard{
+
+  background-color: white;
+  padding: 20px;
+  position: relative;
+
+}
+
+
+form{
+
+  min-height: 100vh;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
 }
 
 header {
     background-color: white;
-    display: flex;
     color: #5BB098;
-    justify-content: space-between;
 }
     
 body {
@@ -20,25 +37,4 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 
-}
-
-
-#searchCard{
-    padding: 100px;
-    margin: 200px;
-    float: left;
-    display: flex;
-    background-color: white;
-    width: 150px;
-    box-sizing: border-box;
-    border-radius: 20px;
-  }
-
-#resultCard{
-    padding: 100px;
-    margin: 200px;
-    position: relative;
-    display: flex;
-    background-color: white;
-    border-radius: 20px;
 }
