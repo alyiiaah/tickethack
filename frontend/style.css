@@ -71,20 +71,16 @@ input {
   background-color: #F5EEEE;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   border-radius: 2px;
-  padding: 5px;
+  padding: 0px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 2px;
   margin-bottom: 10px;
+  width: 90%;
+  margin-left: 3%;
 
 }
-.resultCart {
-margin-right: 10%;
-margin-left: 10%;
-}
-
-
 
 .bookBtn{
   background-color: #52AC92;
@@ -186,9 +182,9 @@ h5{
 
 
 #myCart {
-  background-color: white;
+    background-color: white;
     width: 60%;
-    border-radius: 2px;
+    border-radius: 1em;
     display: flex;
     flex-direction: column;
     margin-top: 11%;
@@ -201,7 +197,6 @@ h5{
   padding-left: 4%;
   padding-right: 4%;
   align-items: center;
-  padding: 2%;
 }
 
 #purchaseBtn {
