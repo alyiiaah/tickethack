@@ -4,7 +4,8 @@ var router = express.Router();
 require("../models/connection");
 const Trip = require("../models/trips");
 
-router.get("/", function (req, res, next) {
+router.post("/", function (req, res, next) {
+  console.log(req.body)
   Trip.find({
     departure: req.body.departure,
     arrival: req.body.arrival,
@@ -13,7 +14,8 @@ router.get("/", function (req, res, next) {
     let filteredArray = data.filter(
       item => item.date.toISOString().substring(0, 10) === date
     );
-    res.json({ Trips: filteredArray });
+    console.log(filteredArray)
+    res.json({ trips: filteredArray });
   });
 });
 
