@@ -11,33 +11,38 @@
 
 <body>
     <header id="header">
-        <nav id="navbar">
+        
             <h1 id="headerTitle">Tickethack</h1>
-            <h3>Cart</h3>
-            <h3>Booking</h3>
-        </nav>
+            <div id ="rightside">
+            <a href = "cart.html">Cart</a>
+            <a href="booking.html">Booking</a>
+            </div>
+        
     </header>
     <main>
         <div id="textMain">
-            <p><strong>Explore the world effortlessly by train!</strong><br>Compare, book and enjoy cheap prices for
+            <p><h2><strong>Explore the world effortlessly by train!</strong></h2>Compare, book and enjoy cheap prices for
                 train tickets: your journey starts on Tickethack.</p>
         </div>
+        <div id="resultzone">
         <div id="searchCard">
-            <form action="searchTrain">
+           
                 <input type="search" name="departure" placeholder="Departure" id="departure" />
-                <input type="search" name="arrival" placeholder="Arrival" id="departure" />
+                <input type="search" name="arrival" placeholder="Arrival" id="arrival" />
                 <input type="date" name="date" id="date" />
                 <button type="submit" id="searchBtn">Search</button>
-            </form>
+            
         </div>
         <div id="resultCard">
-            <div class="resultSearch"><span class="tripId"></span><span class="departure"></span><span class="arival"></span><span class="hour"></span><span class="price"></span><button class="bookBtn"></button></div>
-            <img id="trainLogo" src="/frontend/images/train.png" alt="logoTrain">
-            <p>It's time to book your futur trip.</p>
+            <!-- !/<div class="resultSearch"><span class="tripId"></span><span class="departure">Paris</span><span class="arival">Lyon</span><span class="hour">14h25</span><span class="price">117</span><button class="bookBtn">book</button></div> -->
+            
+            <div id = "logos"></div>
+            <p id ="timetobook">It's time to book your futur trip.</p>
         </div>
+    </div>
     </main>
 
-    <script src="/script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

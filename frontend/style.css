@@ -2,21 +2,89 @@
     padding: 0;
     margin:0;
 }
+body {
+  background-image: url('images/background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
+h2 {
+  padding-bottom: 10px;
+}
+
+#textMain {
+  color: white;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+}
+
+#resultzone{
+display : flex;
+justify-content: space-evenly;
+
+}
+
+#searchCard, #resultCard{
+  background-color: white;
+  padding: 20px;
+  width: 23%;
+  border-radius: 5px;
+  height: 300px ; 
+}
 #searchCard {
-
-  background-color: white;
-  padding: 20px;
-  position: relative;
-}
-
-#resultCard{
-
-  background-color: white;
-  padding: 20px;
   position: relative;
 
 }
+
+#searchBtn {
+  width: 90%;
+  height: 10%;
+  position: absolute;
+  bottom: 5%;
+  right: 6%;
+  background-color: #52AC92;
+  color: white;
+  border: solid 1px white;
+}
+
+input {
+  width: 100%;
+  height: 10%;
+
+}
+
+#date {
+  margin-top : 10%
+}
+
+#resultCard {
+  overflow: auto ;
+  display: flex;
+  flex-direction: column;
+}
+
+#logos {
+  background-image: url('images/train.png');
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 60%;
+  border-bottom: solid 2px #52AC92;
+
+}
+#timetobook {
+  padding-top: 40px;
+  text-align: center;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
 
 
 form{
@@ -29,12 +97,28 @@ form{
 
 header {
     background-color: white;
-    color: #5BB098;
+    display : flex ;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5px ;
+    padding-bottom: 5px;
+    padding-right : 30px ;
+    padding-left : 30px ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  color: #52AC92;
+}
+#rightside{
+  display: flex;
+  width: 15vh;
+  justify-content: space-between;
 }
     
-body {
-  background-image: url('/frontend/images/background.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-
+main {
+  
+ 
+  display :flex ;
+  flex-direction : column ;
 }

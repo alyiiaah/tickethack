@@ -1,10 +1,18 @@
 document.querySelector("#searchBtn").addEventListener("click", function () {
-  fetch("http://localhost:3000/trips")
+    const departure = document.querySelector('#departure').value
+    const arrival = document.querySelector('#arrival').value
+    const date = document.querySelector('#date').value
+
+
+  fetch("http://localhost:3000/trips",{ method: 'POST',	headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify({ departure,arrival,date})}, )
     .then((response) => response.json())
     .then((data) => {
-      if (data.trips) {
+      if (data.trips.length>0) {
+        document.querySelector("#resultCard").innerHTML = '' ;
+        console.log(data)
         for (let i = 0; i < data.trips.length; i++) {
-          const hour = data.trips[i].date.toISOString().substring(12, 17);
+          const hour = data.trips[i].date.substring(12, 16);
           document.querySelector("#resultCard").innerHTML += `
                 <div class="resultSearch"><span class="tripId" id ="${data.trips[i]._id}" ></span>
                 <span class="departure" >${data.trips[i].departure}</span>
@@ -16,9 +24,9 @@ document.querySelector("#searchBtn").addEventListener("click", function () {
           bookingBtnListen();
         }
       } else {
-        document.querySelector("#resultCard").innerHTML += `
+        document.querySelector("#resultCard").innerHTML = `
         <div id ="notripfound">
-        <img src ="/images/notfound.jpg">
+        <img src ="images/notfound.png">
         No trip found
         </div>
         `;
