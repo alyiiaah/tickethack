@@ -1,14 +1,35 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="style.css">
     <title>Tickethack-cart</title>
 </head>
-<body>
-    
-<script src="/script.js"></script>
+
+<body style="background-color: lightgray !important;">
+    <header id="header">
+        <nav id="navbar">
+            <h1 id="headerTitle">Tickethack</h1>
+            <h3>Cart</h3>
+            <h3>Booking</h3>
+        </nav>
+    </header>
+    <main>
+        <div id="myCart">
+            <h3>My cart</h3><br>
+            <div class="resultCart"><span class="tripId"></span><span class="departure"></span><span class="arival"></span><span class="hour"></span><span class="price"></span><button class="bookBtn"></button></div>
+            <div id="totalCart">
+            <p>Total : <span id="price"></span></p>
+            <button type="submit" id="purchaseBtn">Purchase</button>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="script.js"></script>
 </body>
+
 </html>
