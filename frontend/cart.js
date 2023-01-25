@@ -5,7 +5,7 @@ fetch("http://localhost:3000/carts", {
   .then((response) => response.json())
   .then((data) => {
     console.log(data);
-    document.querySelector(".resultCart").innerHTML += `
+    document.querySelector(".resultCart").innerHTML = `
 									<div class="resultSearch"><span class="tripId" id ="${data.carts[0]._id}" ></span>
 									<span class="departure" >${data.carts[0].departure} ></span>
 									<span class="arrival">${data.carts[0].arrival}</span>
