@@ -121,4 +121,60 @@ main {
  
   display :flex ;
   flex-direction : column ;
+body {
+  background-image: url('images/background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+
 }
+
+
+/* CART */
+
+body {
+  background-color: lightgray;
+}
+
+
+#myCart {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding: 70px 300px;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 1em;
+}
+
+h3 {
+top: 0%;
+
+}
+
+
+#totalCart{
+  color: white;
+  position: absolute;
+  background-color: #01153F;
+  display: flex;
+  bottom: 0%;
+  padding: 0% 43%;
+}
+
+#purchaseBtn {
+  display: flex;
+  right: -230%;
+  position: relative;
+  background-color: #5BB098;
+
+}
+
+#bodyCart {
+  background-color: lightgray !important;
+}
+
+/* BOOKING */
